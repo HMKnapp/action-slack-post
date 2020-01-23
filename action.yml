@@ -1,0 +1,15 @@
+name: 'Post To Slack Channel'
+description: 'Post To Slack Channel'
+
+branding:
+  color: 'yellow'
+
+inputs:
+  SLACK_TOKEN:
+    description: 'Slack Webhook Token'
+    required: true
+    default: null
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
