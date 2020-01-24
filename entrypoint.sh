@@ -29,7 +29,7 @@ _pre() {
 
 _send() {
     SLACK_URL='https://hooks.slack.com/services/'${INPUT_SLACK_TOKEN}
-    curl -sSL -X POST -H 'Content-type: application/json' --data @"${INPUT_JSON_PATH}" ${URL}
+    curl -sSL -X POST -H 'Content-type: application/json' --data @"${INPUT_JSON_PATH}" ${SLACK_URL}
     return $?
 }
 
